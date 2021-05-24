@@ -2,45 +2,42 @@ import React, { useEffect, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 const coordinates = [
-  {
-    name: "Rmch hospital",
-    oxygenBedTotal: "50",
-    oxygenBedAvailable: "25",
-    normalBedTotal: "100",
-    normalBedAvailable: "8",
-    lat: 23.389697,
-    lng: 85.350161,
-  },
-
-  {
-    name: "nedica ranchi",
-    oxygenBedTotal: "50",
-    oxygenBedAvailable: "25",
-    normalBedTotal: "100",
-    normalBedAvailable: "8",
-    lat: 23.3689119,
-    lng: 85.3258173,
-  },
-
-  {
-    name: "raj hospital",
-    oxygenBedTotal: "50",
-    oxygenBedAvailable: "25",
-    normalBedTotal: "100",
-    normalBedAvailable: "8",
-    lat: 23.358804,
-    lng: 85.324796,
-  },
-
-  {
-    name: "Majid Alam hospital",
-    oxygenBedTotal: "50",
-    oxygenBedAvailable: "25",
-    normalBedTotal: "100",
-    normalBedAvailable: "8",
-    lat: 23.3914607,
-    lng: 85.3459135,
-  },
+  // {
+  //   name: "Rmch hospital",
+  //   oxygenBedTotal: "50",
+  //   oxygenBedAvailable: "25",
+  //   normalBedTotal: "100",
+  //   normalBedAvailable: "8",
+  //   lat: 23.389697,
+  //   lng: 85.350161,
+  // },
+  // {
+  //   name: "nedica ranchi",
+  //   oxygenBedTotal: "50",
+  //   oxygenBedAvailable: "25",
+  //   normalBedTotal: "100",
+  //   normalBedAvailable: "8",
+  //   lat: 23.3689119,
+  //   lng: 85.3258173,
+  // },
+  // {
+  //   name: "raj hospital",
+  //   oxygenBedTotal: "50",
+  //   oxygenBedAvailable: "25",
+  //   normalBedTotal: "100",
+  //   normalBedAvailable: "8",
+  //   lat: 23.358804,
+  //   lng: 85.324796,
+  // },
+  // {
+  //   name: "Majid Alam hospital",
+  //   oxygenBedTotal: "50",
+  //   oxygenBedAvailable: "25",
+  //   normalBedTotal: "100",
+  //   normalBedAvailable: "8",
+  //   lat: 23.3914607,
+  //   lng: 85.3459135,
+  // },
 ];
 
 const BasicMap = () => {
@@ -94,6 +91,8 @@ const BasicMap = () => {
                   </Marker>
                 );
               })}
+
+              <Marker position={[userLatitude, userLongitude]} />
             </MapContainer>
           </div>
         </div>
