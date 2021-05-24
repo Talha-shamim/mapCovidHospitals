@@ -92,6 +92,7 @@ const BasicMap = () => {
                 );
               })}
 
+              <Marker position={[LAT, LNG]} />
               <Marker position={[userLatitude, userLongitude]} />
             </MapContainer>
           </div>
